@@ -46,6 +46,7 @@ for url in urls:
         # Get titile for images
         image_titel = image_url.text.split('/')[-1] + '-' + png_url.split('/')[-1]
 
+        # TODO Craete downloaded_png directory
         # write image content to drive
         with open ("downloaded_png/" + image_titel, "wb") as file:
             file.write(image.content)
